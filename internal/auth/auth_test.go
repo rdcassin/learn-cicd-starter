@@ -41,7 +41,7 @@ func TestGetAPIKey(t *testing.T) {
 		}
 
 		if err != nil {
-			if strings.Contains(err.Error(), test.expectedErr){
+			if strings.Contains(err.Error(), test.expectedErr) {
 				return
 			}
 			t.Errorf("Unexpected Error returned from test '%s'", test.name)
